@@ -1,4 +1,4 @@
 #!/usr/bin/python3
 str = "Holberton School"
-print(f'{str}{str}{str}')
-print(f'{str[0:10]}')
+print(F"{str}{str}{str}")
+print(F"{str[0:10]}")
