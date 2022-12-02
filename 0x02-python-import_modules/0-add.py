@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-#AUTHOR: Mezie Gift
+# AUTHOR: Mezie Gift
 if __name__ == "__main__":
     from add_0 import add
     a = 1
