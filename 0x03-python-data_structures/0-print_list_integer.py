@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 # AUTHOR: Mezie Gift
 def print_list_integer(my_list=[]):
-    result = '{}\n{}\n{}\n{}\n{}'.format(*my_list)
-    print(result)
+    """prints all integers of a list"""
+    result = my_list
+    print('{}\n{}\n{}\n{}\n{}'.format(*result))
