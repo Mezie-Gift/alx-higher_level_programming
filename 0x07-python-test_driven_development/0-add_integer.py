@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 # AUTHOR: Mezie Gift
+"""Define integer addition function"""
+
 def add_integer(a, b=98):
     """add_integer adds number a and b, and returns the result.
 
