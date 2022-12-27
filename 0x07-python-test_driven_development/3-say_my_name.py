@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 # AUTHOR: Mezie Gift
-"""Define print my name function"""
+"""Define say_my_name function"""
 
 def say_my_name(first_name, last_name=""):
     """function prints a persons name.
