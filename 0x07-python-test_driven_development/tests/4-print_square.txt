@@ -1,0 +1,75 @@
+============================
+How to use 4-print_square.py
+============================
+
+This function defines a function for printing square``print_square(size)``.
+
+=====
+Usage
+=====
+
+``print_square(size)`` prints a square with the character #.
+
+::
+    >>> print_square = __import__('4-print_square').print_square
+
+
+::
+    >>> print_square(4)
+    ####
+    ####
+    ####
+    ####
+
+::
+    >>> print_square(2)
+    ##
+    ##
+
+Function works with floating point numbers
+
+::
+    >>> print_square(3.5)
+    ###
+    ###
+    ###
+    
+    Note: floats are casted into integer before being printed.
+
+::
+    >>> print_square(4.5)
+    ####
+    ####
+    ####
+    ####
+        
+Errors: ``print_square(size)`` expects that the size argument will be an integer or a float typecasted into an integer, whereby size is not an integer or an integer typecasted float, a TypeError is raised
+
+::
+    >>> print_square("a")
+    Traceback (most recent call last):
+    TypeError: size must be an integer
+
+::
+    >>> print_square('#')
+    Traceback (most recent call last):
+    TypeError: size must be an integer
+
+::
+    >>> print_square(None)
+    Traceback (most recent call last):
+    TypeError: size must be an integer
+
+If size is less than 0, a ValueError is raised
+
+::
+    >>> print_square(-5)
+    Traceback (most recent call last):
+    ValueError: size must be >= 0
+
+If no argument is passed to function, it raises a new type of error:
+
+::
+    >>> print_square()
+    Traceback (most recent call last):
+    TypeError: print_square() missing 1 required positional argument: 'size'

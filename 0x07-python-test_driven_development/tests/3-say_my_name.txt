@@ -1,0 +1,82 @@
+===========================
+How to use 3-say_my_name.py
+===========================
+
+This module defines say my name function ``say_my_name(first_name, last_name="")``
+
+======
+Usage
+======
+
+``say_my_name(first_name, last_name="")`` prints a persons name in this format: My name is <first name> <last name>
+
+::
+
+    >>> say_my_name = __import__('3-say_my_name').say_my_name
+    >>> say_my_name("John", "Smith")
+    My name is John Smith
+
+Function can accepts one string argument.
+
+::
+    >>> say_my_name("Bob")
+    My name is Bob 
+
+Function can also accept an empty string as an argument
+
+::
+    >>> say_my_name("", "Mezie")
+    My name is  Mezie
+
+::
+    >>> say_my_name("Gift", "")
+    My name is Gift 
+
+::
+    >>> say_my_name("", "")
+    My name is  
+
+Fuction accepts integers passed as string as argument(s).
+
+::
+    >>> say_my_name("Guiness", "1759")
+    My name is Guiness 1759
+
+::
+    >>> say_my_name("1615", "1759")
+    My name is 1615 1759
+
+::
+    >>> say_my_name("3.0", "9.1")
+    My name is 3.0 9.1
+
+Function expects that both arguments are string, whereby one or both argument is not a string, a TypeError is raised:
+
+::
+    >>> say_my_name(1759, "Mezie")
+    Traceback (most recent call last):
+    TypeError: first_name must be a string
+
+::
+    >>> say_my_name("None", 433)
+    Traceback (most recent call last):
+    TypeError: last_name must be a string
+
+::
+    >>> say_my_name(1615, 1759)
+    Traceback (most recent call last):
+    TypeError: first_name must be a string
+
+Note that since the first argument is not a string, the Computer didn't need to look for the other argument, so, a TypeError was raised for firstname.
+
+::
+    >>> say_my_name(None)
+    Traceback (most recent call last):
+    TypeError: first_name must be a string
+
+At least one argument is required for the function else a TypError is raised
+
+::
+    >>> say_my_name()
+    Traceback (most recent call last):
+    TypeError: say_my_name() missing 1 required positional argument: 'first_name'
