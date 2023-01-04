@@ -2,7 +2,9 @@
 # AUTHOR: Mezie Gift
 """Define say_my_name function"""
 
+
 def say_my_name(first_name, last_name=""):
+
     """function prints a persons name.
     args:
         first_name: The person's first name
