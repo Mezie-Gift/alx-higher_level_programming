@@ -26,22 +26,6 @@ Usage
     ##
     ##
 
-Function works with floating point numbers
-
-::
-    >>> print_square(3.5)
-    ###
-    ###
-    ###
-    
-    Note: floats are casted into integer before being printed.
-
-::
-    >>> print_square(4.5)
-    ####
-    ####
-    ####
-    ####
         
 Errors: ``print_square(size)`` expects that the size argument will be an integer or a float typecasted into an integer, whereby size is not an integer or an integer typecasted float, a TypeError is raised
 
