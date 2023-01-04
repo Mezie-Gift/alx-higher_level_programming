@@ -1,9 +1,11 @@
-#!/usr/bin/bash
+#!/usr/bin/python3
 # AUTHOR: Mezie Gift
 """module prints test with two new line"""
 
+
 def text_indentation(text):
-    """prints a text with 2 new lines after each of these characters: ., ? and :
+    """prints a text with 2 new lines after each
+                 of these characters: ., ? and :
     args:
         test: prints a text.
     Errors:
