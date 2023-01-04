@@ -1,4 +1,4 @@
-#!/usr/bin_python3
+#!/usr/bin/python3
 # AUTHOR: Mezie Gift
 """Define print_square"""
 
