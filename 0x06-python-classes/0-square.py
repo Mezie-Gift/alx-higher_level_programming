@@ -6,7 +6,3 @@
 class Square:
     """Body of class"""
     pass
-
-
-sqr = Square()
-print(sqr)
