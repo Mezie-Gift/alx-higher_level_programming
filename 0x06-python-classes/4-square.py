@@ -1,5 +1,8 @@
 #!/usr/bin/python3
 # AUTHOR: Mezie Gift
+"""Defines a square class"""
+
+
 
 class Square:
     """Square defines a square based on 1-square.py"""
