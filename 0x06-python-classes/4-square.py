@@ -3,7 +3,6 @@
 """Defines a square class"""
 
 
-
 class Square:
     """Square defines a square based on 1-square.py"""
     def __init__(self, size=0):
