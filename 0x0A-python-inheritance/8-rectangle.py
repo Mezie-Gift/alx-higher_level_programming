@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 # AUTHOR: Mezie Gift
-"""Module defines a BaseaGeometry class that is the parent of rectangle class"""
+"""Module defines a BaseaGeometry class that
+   is the parent of rectangle class"""
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 
