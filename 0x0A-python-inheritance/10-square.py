@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 # AUTHOR: Mezie Gift
-"""Module defines a class Square that inherits from Rectangle (9-rectangle.py)"""
+"""Module defines a class 'Square' that inherits
+ from Rectangle (9-rectangle.py)"""
 Rectangle = __import__('9-rectangle').Rectangle
 
 
