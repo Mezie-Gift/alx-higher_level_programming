@@ -1,4 +1,4 @@
-#!/use/bin/python3
+#!/usr/bin/python3
 # AUTHOR: Mezie Gift
 import json
 """Mode defines to_json_string function"""
