@@ -1,7 +1,7 @@
 #!/use/bin/python3
 # AUTHOR: Mezie Gift
-"""Mode defines to_json_string function"""
 import json
+"""Mode defines to_json_string function"""
 
 
 def to_json_string(my_obj):
