@@ -20,5 +20,6 @@ class Student(object):
         """Method retrieves a dictionary representation of a Student instance.
         """
         if (type(attrs) == list and all(type(item) == str for item in attrs)):
-            return {name: getattr(self, name) for name in attrs if hasattr(self, name)}
+            return {name: getattr(self, name) for
+                    name in attrs if hasattr(self, name)}
         return self.__dict__
