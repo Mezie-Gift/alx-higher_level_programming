@@ -8,14 +8,14 @@ if (isNaN(process.argv[2])) {
   console.log('Not a number');
 } else if (process.argv[2]) {
   if (Number.isInteger(process.argv[2]) === true) {
-    console.log("My number: ", process.argv[2]);
+    console.log('My number: ', process.argv[2]);
   } else if (typeof process.argv[2] === 'number' && Number.isInteger(process.argv[2]) !== true) {
-    console.log("My number: ", parseInt(process.argv[2]));
+    console.log('My number: ', parseInt(process.argv[2]));
   } else {
     if (typeof process.argv[2] === 'string' && isNaN(process.argv[2])) {
       console.log('Not a number');
     } else if (typeof process.argv[2] === 'string' && typeof parseInt(process.argv[2]) === 'number') {
-      console.log("My number: ", parseInt(process.argv[2]));
+      console.log('My number: ', parseInt(process.argv[2]));
     }
   }
 }
