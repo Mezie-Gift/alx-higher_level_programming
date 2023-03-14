@@ -5,13 +5,12 @@
 
 let firstArg;
 process.argv.forEach((value, index) => {
-if (index === 2) {
+  if (index === 2) {
     firstArg = value;
-    }
-    });
+  }
+});
 if (firstArg) {
-	console.log(firstArg);
+  console.log(firstArg);
 } else {
-	console.log('No argument');
+  console.log('No argument');
 }
-
