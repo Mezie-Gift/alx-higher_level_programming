@@ -7,7 +7,7 @@
 
 const x = parseInt(process.argv[2]);
 
-if (isNaN(x) || typeof x === 'string' || x < 0) {
+if (isNaN(x) || typeof x === 'string') {
   console.log('Missing number of occurrences');
 } for (let i = 0; i < x; i++) {
   console.log('C is fun');
