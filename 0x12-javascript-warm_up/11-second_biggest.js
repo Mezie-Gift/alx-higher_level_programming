@@ -9,20 +9,20 @@ const args = process.argv.slice(2).map(Number); // convert command line argument
 const argsLength = args.length;
 
 if (argsLength === 0) {
-console.log(0);
+  console.log(0);
 } else if (argsLength === 1) {
-console.log(0);
+  console.log(0);
 } else {
-let largest = -Infinity;
-let secondLargest = -Infinity;
-for (let i = 0; i < argsLength; i++) {
-const current = args[i];
-if (current > largest) {
-secondLargest = largest;
-largest = current;
-} else if (current > secondLargest && current !== largest) {
-secondLargest = current;
-}
-}
-console.log(secondLargest);
+  let largest = -Infinity;
+  let secondLargest = -Infinity;
+  for (let i = 0; i < argsLength; i++) {
+    const current = args[i];
+    if (current > largest) {
+      secondLargest = largest;
+      largest = current;
+    } else if (current > secondLargest && current !== largest) {
+      secondLargest = current;
+    }
+  }
+  console.log(secondLargest);
 }
