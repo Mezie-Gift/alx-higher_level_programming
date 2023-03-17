@@ -11,16 +11,15 @@ class Square extends SquareX {
   charPrint (c) {
     /* This method prints a square using:
        - the character `c`
-       - If c is undefined, it use the character `X`
+       - If c is undefined, it uses the character `X`
     */
     for (let i = 0; i < this.height; i++) {
       let result = '';
       for (let j = 0; j < this.width; j++) {
         if (c === undefined) {
-          result += 'X';
-        } else {
-          result += 'c';
+          c = 'X';
         }
+        result += c;
       }
       console.log(result);
     }
