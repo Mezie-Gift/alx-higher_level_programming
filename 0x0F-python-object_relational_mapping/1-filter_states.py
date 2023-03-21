@@ -10,7 +10,7 @@ if __name__ == "__main__":
     username = sys.argv[1]
     password = sys.argv[2]
     db_name = sys.argv[3]
-    pattern = r'\bN\w*'
+    pattern = r'^N'
 
     db = MySQLdb.connect(host="localhost",
                          port=3306,
