@@ -6,7 +6,6 @@ from sqlalchemy.ext.declarative import declarative_base
 from model_state import Base
 
 
-
 class City(Base):
     """City class with id, and name of each city
     """
