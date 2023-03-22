@@ -15,7 +15,7 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     session = Session()
     item = session.query(State).filter(State.name == sys.argv[4])
-    if item:
+    try:
         print("{}".format(item[0].id))
-    else:
+    except IndexError:
         print("Not found")
