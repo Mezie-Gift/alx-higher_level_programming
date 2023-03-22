@@ -13,8 +13,8 @@ if __name__ == "__main__":
     Base.metadata.create_all(engine)
     Session = sessionmaker(bind=engine)
     session = Session()
-    for item in session.query(State).order_by(State.id):
-        if not bool(item):
-            print("Nothing")
-        elif item.id == 1:
-            print("{}: {}".format(item.id, item.name))
+    item = session.query(State).first()
+    if not bool(item):
+        print("Nothing")
+    else:
+        print("{}: {}".format(item.id, item.name))
