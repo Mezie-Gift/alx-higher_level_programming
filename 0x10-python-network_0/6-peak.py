@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """ This function finds a peak in a list of unsorted integers"""
-from scipy.signal import find_peaks
 
 
 def find_peak(list_of_integers):
