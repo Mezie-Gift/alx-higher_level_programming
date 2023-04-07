@@ -12,8 +12,9 @@ if __name__ == "__main__":
     res = requests.get("https://api.github.com/repos/{}/{}/commits"
                        .format(argv[2], argv[1])).json()
     if res:
-        last_ten = [res[i] for i in range(len(res)-10, len(res))]
-        for commits in last_ten:
+        # last_ten = [res[i] for i in range(len(res[-10:]), len(res))]
+        last_commits = res[-min(len(res), 10):]
+        for commits in last_commits:
             print("{}: {}".format(commits.get("sha"), commits.get("commit")
                   .get("author").get("name")))
     else:
